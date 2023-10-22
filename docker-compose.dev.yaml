@@ -1,0 +1,15 @@
+services:
+  frontend:
+    image: nginx:1.25
+    restart: always
+    ports:
+      - 8000:8000
+    volumes:
+      - ./order/:/var/www/html/order/:ro
+      - ./menu/:/var/www/html/menu/:ro
+      - ./cafe/:/var/www/html/cafe/:ro
+      - ./login/:/var/www/html/login/:ro
+      - ./register/:/var/www/html/register/:ro
+      - ./index.html:/var/www/html/index.html:ro
+      - ./styles.css:/var/www/html/styles.css:ro
+      - ./nginx.dev.conf:/etc/nginx/conf.d/default.conf:ro

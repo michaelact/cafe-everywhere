@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.order-item.completed {
+    background-color: #f0f0f0;
+}
+
+.order-item.in-progress {
+    background-color: #d4edda;
+}
+
+.order-item.pending {
+    background-color: #fff3cd;
+}
+
+.order-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.order-item p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.order-item .status-icon {
+    margin-right: 5px;
+}
+
+.order-item .address-icon {
+    margin-left: 5px;
+}
+
+.order-item .fa {
+    color: #4caf50;
+}
+
+.order-item.completed .fa {
+    color: #6c757d;
+}
+
+.order-item.in-progress .fa {
+    color: #28a745;
+}
+
+.order-item.pending .fa {
+    color: #ffc107;
+}
