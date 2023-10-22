@@ -3,7 +3,7 @@ services:
     image: nginx:1.25
     restart: always
     ports:
-      - 8000:8000
+      - 127.0.0.1:8000:8000
     volumes:
       - ./order/:/var/www/html/order/:ro
       - ./menu/:/var/www/html/menu/:ro
