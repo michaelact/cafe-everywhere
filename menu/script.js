@@ -15,7 +15,7 @@ if (!menuId || isNaN(menuId)) {
 // Fetch menu data from the backend API
 fetch(`http://localhost:9999/cafe-menu/${menuId}`, {
         headers: {
-            'x-api-key': 'VGh1IE9jdCAxMiAxOToxMzoyOCBXSUIgMjAyMwo='
+            'x-api-key': 'API_KEY_NOT_SET'
         }
     })
     .then(response => response.json())
@@ -59,7 +59,7 @@ fetch(`http://localhost:9999/cafe-menu/${menuId}`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
-                            'x-api-key': 'VGh1IE9jdCAxMiAxOToxMzoyOCBXSUIgMjAyMwo='
+                            'x-api-key': 'API_KEY_NOT_SET'
                         },
                         body: JSON.stringify(data)
                     })

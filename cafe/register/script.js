@@ -17,7 +17,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'x-api-key': 'VGh1IE9jdCAxMiAxOToxMzoyOCBXSUIgMjAyMwo='
+            'x-api-key': 'API_KEY_NOT_SET'
         },
         body: JSON.stringify(data)
     })

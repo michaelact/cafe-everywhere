@@ -13,7 +13,7 @@ const addMenuButton = document.getElementById("add-menu");
 // Fetch menu data from the backend
 fetch(`http://localhost:9999/cafe-menu/${cafeId}`, {
         headers: {
-            'x-api-key': 'VGh1IE9jdCAxMiAxOToxMzoyOCBXSUIgMjAyMwo='
+            'x-api-key': 'API_KEY_NOT_SET'
         }
     })
     .then(response => response.json())
@@ -71,7 +71,7 @@ menuFormElement.addEventListener("submit", function (event) {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            'x-api-key': 'VGh1IE9jdCAxMiAxOToxMzoyOCBXSUIgMjAyMwo='
+            'x-api-key': 'API_KEY_NOT_SET'
         },
         body: JSON.stringify(menuData)
     })

@@ -8,7 +8,7 @@ if (!userId) {
 // Fetch order data from the backend API
 fetch(`http://localhost:9999/users-order/${userId}`, {
         headers: {
-            'x-api-key': 'VGh1IE9jdCAxMiAxOToxMzoyOCBXSUIgMjAyMwo='
+            'x-api-key': 'API_KEY_NOT_SET'
         }
     })
     .then(response => response.json())

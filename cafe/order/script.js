@@ -11,7 +11,7 @@ const orderList = document.getElementById("order-list");
 // Fetch order data from the backend
 fetch(`http://localhost:9999/cafe-order/${cafeId}`, {
         headers: {
-            'x-api-key': 'VGh1IE9jdCAxMiAxOToxMzoyOCBXSUIgMjAyMwo='
+            'x-api-key': 'API_KEY_NOT_SET'
         }
     })
     .then(response => response.json())
@@ -88,7 +88,7 @@ function updateOrderStatus(orderId, newStatus) {
         method: "PATCH",
         headers: {
             "Content-Type": "application/json",
-            'x-api-key': 'VGh1IE9jdCAxMiAxOToxMzoyOCBXSUIgMjAyMwo='
+            'x-api-key': 'API_KEY_NOT_SET'
         },
         body: JSON.stringify(updateData)
     })

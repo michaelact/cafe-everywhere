@@ -24,7 +24,7 @@ Make sure you have the following installed on your system:
 
 2. **Start the Application:**
    ```shell
-   docker compose -f docker-compose.dev.yml up -d
+   docker compose up -d
    ```
 
 3. Access http://localhost:8000
