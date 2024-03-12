@@ -6,6 +6,8 @@
 
 Welcome to Cafe Everywhere, frontend with purpose to connecting Baristas and Customers. This documentation will guide you through setting up Cafe Everywhere frontend.
 
+> API: https://github.com/michaelact/cafe-everywhere-api
+
 > Cafe Everywhere is a toy project and was only made in less than 2 days, for a college assignment.
  
 ### Prerequisites
