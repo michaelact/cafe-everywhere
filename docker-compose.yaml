@@ -1,10 +1,11 @@
 services:
-  frontend:
+  ui:
     build:
       context: .
       dockerfile: Dockerfile
     env_file: 
       - .env
+    container_name: cafe-everywhere-ui
     image: cafe-everywhere
     restart: on-failure:5
     ports:
