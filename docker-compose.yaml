@@ -9,3 +9,8 @@ services:
     restart: on-failure:5
     ports:
       - 127.0.0.1:8000:8000
+
+networks:
+  default:
+    name: cafe-everywhere
+    external: true
